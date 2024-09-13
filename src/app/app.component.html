@@ -1,0 +1,32 @@
+<h1 class="text-3xl font-bold underline">
+  Hello world!
+</h1>
+
+<div class="mt-12 ml-auto mr-auto">
+  <button hlmBtn variant='destructive'>
+    Hello from {{ title }}
+  </button>
+</div>
+
+<nav class="mt-5" hlmPagination>
+  <ul hlmPaginationContent>
+    <li hlmPaginationItem>
+      <hlm-pagination-previous link="/components/menubar" />
+    </li>
+    <li hlmPaginationItem>
+      <a hlmPaginationLink link="#">1</a>
+    </li>
+    <li hlmPaginationItem>
+      <a hlmPaginationLink link="#" isActive>2</a>
+    </li>
+    <li hlmPaginationItem>
+      <a hlmPaginationLink link="#">3</a>
+    </li>
+    <li hlmPaginationItem>
+      <hlm-pagination-ellipsis />
+    </li>
+    <li hlmPaginationItem>
+      <hlm-pagination-next link="/components/popover" />
+    </li>
+  </ul>
+</nav>
